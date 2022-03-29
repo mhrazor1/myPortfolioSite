@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Miles' Portfolio</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/photoswipe.css" rel="stylesheet" type="text/css">
+	<script src="https://kit.fontawesome.com/eaa5bf7492.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.typekit.net/mhm0wuf.css">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+	<header>
+		<h1><a id="port">A Portfolio<br> of work by</a><a id="title" href="index.html">MILES<br>HOWLEY</a></h1>
+		<nav>
+			<a id="about" href="about.html">ABOUT</a>
+			<a id="graphic" href="graphic.html">GRAPHIC<i id="indicator" class="fa-solid fa-circle"></i></a>
+			<a id="audio" href="audio.html">AUDIO</a>
+			<a id="video" href="video.html">VIDEO</a>
+		</nav>
+	</header>
+	<main>
+		<p class="concept">A concept for a set of nature-themed playing cards:</p>
+		<div class="pswp-gallery" id="my-gallery">
+			<a
+				href="/images/cards/Card-1.png"
+				data-pswp-width="1705"
+				data-pswp-height="2388">
+				<img src="/images/cards/Card-1-Thumb.jpg" alt="">
+			</a>
+			<a
+				href="/images/cards/Card-2.png"
+				data-pswp-width="1705"
+				data-pswp-height="2388">
+				<img src="/images/cards/Card-2-Thumb.jpg" alt="">
+			</a>
+			<a
+				href="/images/cards/Card-3.png"
+				data-pswp-width="1705"
+				data-pswp-height="2388">
+				<img src="/images/cards/Card-3-Thumb.jpg" alt="">
+			</a>
+			<a
+				href="/images/cards/Card-4.png"
+				data-pswp-width="1705"
+				data-pswp-height="2388">
+				<img src="/images/cards/Card-4-Thumb.jpg" alt="">
+			</a>
+			<a
+				href="/images/cards/Card-5.png"
+				data-pswp-width="1705"
+				data-pswp-height="2388">
+				<img src="/images/cards/Card-5-Thumb.jpg" alt="">
+			</a>
+			<a
+				href="/images/cards/Card-6.png"
+				data-pswp-width="1705"
+				data-pswp-height="2388">
+				<img src="/images/cards/Card-6-Thumb.jpg" alt="">
+			</a>
+			<a
+				href="/images/cards/Card-7.png"
+				data-pswp-width="1705"
+				data-pswp-height="2388">
+				<img src="/images/cards/Card-7-Thumb.jpg" alt="">
+			</a>
+			<a
+				href="/images/cards/Card-8.png"
+				data-pswp-width="1705"
+				data-pswp-height="2388">
+				<img src="/images/cards/Card-8-Thumb.jpg" alt="">
+				<a
+					href="/images/cards/Card-9.png"
+					data-pswp-width="1705"
+					data-pswp-height="2388">
+					<img src="/images/cards/Card-9-Thumb.jpg" alt="">
+				</a>
+				<a
+					href="/images/cards/Card-10.png"
+					data-pswp-width="1705"
+					data-pswp-height="2388">
+					<img src="/images/cards/Card-10-Thumb.jpg" alt="">
+				</a>
+				<a
+					href="/images/cards/Card-11.png"
+					data-pswp-width="1705"
+					data-pswp-height="2388">
+					<img src="/images/cards/Card-11-Thumb.jpg" alt="">
+				</a>
+				<a
+					href="/images/cards/Card-12.png"
+					data-pswp-width="1705"
+					data-pswp-height="2388">
+					<img src="/images/cards/Card-12-Thumb.jpg" alt="">
+				</a>
+				<a
+					href="/images/cards/Card-13.png"
+					data-pswp-width="1705"
+					data-pswp-height="2388">
+					<img src="/images/cards/Card-13-Thumb.jpg" alt="">
+				</a>
+				<a
+					href="/images/cards/Card-14.png"
+					data-pswp-width="1705"
+					data-pswp-height="2388">
+					<img src="/images/cards/Card-14-Thumb.jpg" alt="">
+				</a>
+				<a
+					href="/images/cards/Card-15.png"
+					data-pswp-width="1705"
+					data-pswp-height="2388">
+					<img src="/images/cards/Card-15-Thumb.jpg" alt="">
+				</a>
+				<a
+					href="/images/cards/Card-16.png"
+					data-pswp-width="1705"
+					data-pswp-height="2388">
+					<img src="/images/cards/Card-16-Thumb.jpg" alt="">
+				</a>
+			</a>
+		</div>
+	</main>
+	<footer>
+		<p id="copy">Copyright <i class="fa-regular fa-copyright"></i> 2022 Miles Howley </p>
+		<a id="vsco" href="https://vsco.co/-miles-/gallery" target="_blank"><p><i class="fas fa-camera"></i>         VSCO</p></a>
+	</footer>
+	<script type="module">
+		import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.js';
+		const lightbox = new PhotoSwipeLightbox({
+			gallery: '#my-gallery',
+			children: 'a',
+			pswpModule: () => import('/js/photoswipe.esm.js'),
+		});
+		lightbox.init();
+	</script>
+
+</body>
+</html>

@@ -13,6 +13,10 @@ body{
   padding-left: 1rem;
   padding-right: 1rem;
 }
+#my-gallery a{padding-top: 0.5rem;}
+
+
+
 
 @media all and (min-width: 0rem){
   #port{
@@ -60,6 +64,13 @@ body{
     border: 0.33rem solid;
     transition: all .33s;
   }
+  #my-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-items: center;
+  }
   #indicator{font-size: 1rem; align-self: center; margin: auto; margin-left: 0px; padding-left: 1rem; margin-top: 10px;}
   #title{
     font-size: 4rem;
@@ -70,6 +81,25 @@ body{
   .arrows{
     font-size: .75rem;
     color: var(--main-color);}
+  .concept {
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    padding: 1rem;
+    padding-top: 0px;
+    font-size: 1rem;
+  }
+  #portrait{
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+  #aboutMain{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    background-color: var(--main-color);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
   .videoPost{
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -159,6 +189,13 @@ body{
   #arrow3,#arrow4{display: inline;}
   #rworksText{font-size: 1.5rem;}
   .arrows{font-size: 1.25rem;}
+  #my-gallery{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #aboutMain{
+    grid-template-columns: 1fr 1fr;
+  }
+  #portrait{padding-left: 2rem;}
   .videoPost{font-size: 1.5rem;}
   .left,.right{font-size: 1.5rem;}
   footer{font-size: 2rem;}
@@ -181,10 +218,17 @@ body{
     font-size: 3rem;}
   #title{font-size: 7rem; line-height: 7rem;}
   #rworksText{font-size: 2rem;}
+  #aboutMain{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #aboutMe{font-size: 2rem; grid-column: span 2;}
   .content{
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
+  }
+  #my-gallery{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .left,.right{
     grid-column: span 1;
