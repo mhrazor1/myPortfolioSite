@@ -85,7 +85,6 @@ h3{overflow: hidden;}
     color: var(--bg-color);
     background-color: var(--main-color);
     padding: 1rem;
-    padding-top: 0px;
     font-size: 1rem;
   }
   #portrait{
@@ -224,7 +223,7 @@ h3{overflow: hidden;}
   #aboutMain{
     grid-template-columns: 1fr 1fr 1fr;
   }
-  #aboutMe{font-size: 2rem; grid-column: span 2;}
+  #aboutMe{font-size: 1.5rem; grid-column: span 2;}
   .content{
     display: grid;
     grid-gap: 1rem;
