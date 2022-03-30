@@ -91,7 +91,7 @@ h3{overflow: hidden;}
   #portrait{
     padding: 1rem;
     padding-top: 2rem;
-    max-width: fit-content;
+    max-width: 100%;
   }
   #aboutMain{
     display: grid;
