@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Miles' Portfolio</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/photoswipe.css" rel="stylesheet" type="text/css">
 	<script src="https://kit.fontawesome.com/eaa5bf7492.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://use.typekit.net/mhm0wuf.css">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -29,13 +30,28 @@
 			<p><i id="arrow6" class="fa-solid fa-angles-down arrows" aria-hidden="true"></i></p>
 		</div>
 		<div class="content">
-			<div class="left">
-				<img id="GrandJunction" src="images/GrandJunctionThumb.webp" alt="A rock formation near Grand Junction, Colorado">
-				<h3>OUT IN THE HILLS<br>Near Grand Junction, Colorado</h3>
+			<div class="pswp-gallery" id="front-page">
+				<div class="left">
+					<a
+						href="/images/GrandJunction.jpg"
+						data-pswp-width="4897"
+						data-pswp-height="3265">
+						<img id="GrandJunction" src="images/GrandJunctionThumb.png" alt="A rock formation near Grand Junction, Colorado">
+					</a>
+					<h3>OUT IN THE HILLS<br>Near Grand Junction, Colorado</h3>
+				</div>
 			</div>
-			<div class="right">
-				<h3>LIMBER GROVE TRAIL<br>Fairplay, Colorado</h3>
-				<img id="LimberGrove" src="images/LimberGroveThumb.webp" alt="wood">
+				<div class="pswp-gallery" id="front-page">
+					<div class="right">
+						<h3>LIMBER GROVE TRAIL<br>Fairplay, Colorado</h3>
+						<a
+							href="/images/LimberGrove.jpg"
+							data-pswp-width="6000"
+							data-pswp-height="4000">
+							<img id="GrandJunction" src="images/LimberGroveThumb.png" alt="A rock formation near Grand Junction, Colorado">
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -43,28 +59,14 @@
 		<p id="copy">Copyright <i class="fa-regular fa-copyright"></i> 2022 Miles Howley </p>
 		<a id="vsco" href="https://vsco.co/-miles-/gallery" target="_blank"><p><i class="fas fa-camera"></i>         VSCO</p></a>
 	</footer>
+	<script type="module">
+		import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.js';
+		const lightbox = new PhotoSwipeLightbox({
+			gallery: '#front-page',
+			children: 'a',
+			pswpModule: () => import('/js/photoswipe.esm.js'),
+		});
+		lightbox.init();
+	</script>
 </body>
-<!-- <canvas id="canvas1" width="792" height="466"></canvas>
-
-<script type="text/javascript" defer>
-var cv1 = document.getElementById("canvas1");
-
-if (cv1.getContext)
-{
-var ctx1 = cv1.getContext("2d");
-document.getElementById("canvas1").onmousemove = function(event) {track(event)};
-}
-
-function track(e)
-{
-var x = e.layerX;
-var y = e.layerY;
-ctx1.clearRect(0, 0, cv1.width, cv1.height);
-ctx1.fillStyle = "#EEEEEE";
-ctx1.beginPath();
-ctx1.arc(x, y, 20, 0, Math.PI*2);
-ctx1.fill();
-}
-</script> -->
-
 </html>
