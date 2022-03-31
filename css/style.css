@@ -85,8 +85,8 @@ h3{overflow: hidden;}
     color: var(--bg-color);
     background-color: var(--main-color);
     padding: 1rem;
-    font-size: 1rem;
-  }
+    margin-top: 1rem;
+    font-size: 1.5rem;}
   #portrait{
     padding: 1rem;
     padding-top: 2rem;
@@ -229,6 +229,7 @@ h3{overflow: hidden;}
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
   }
+  #collage{grid-column: span 2;}
   #my-gallery{
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
