@@ -29,8 +29,8 @@
 		</nav>
 	</header>
 	<main>
-		<p class="concept">A concept for a set of nature-themed playing cards where the four seasons are used to represent the four suits. Made in Procreate:</p>
-		<div class="pswp-gallery" id="my-gallery">
+		<p class="bodySection">A concept for a set of nature-themed playing cards where the four seasons are used to represent the four suits. Made in Procreate:</p>
+		<div class="pswp-gallery" id="card-gallery">
 			<a
 				href="/images/cards/Card-1.png"
 				data-pswp-width="1705"
@@ -136,7 +136,7 @@
 	<script type="module">
 		import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.js';
 		const lightbox = new PhotoSwipeLightbox({
-			gallery: '#my-gallery',
+			gallery: '#card-gallery',
 			children: 'a',
 			pswpModule: () => import('/js/photoswipe.esm.js'),
 		});

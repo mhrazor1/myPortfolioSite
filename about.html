@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Miles' Portfolio</title>
-	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/photoswipe.css" rel="stylesheet" type="text/css">
 	<script src="https://kit.fontawesome.com/eaa5bf7492.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://use.typekit.net/mhm0wuf.css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JM2N22YXTF"></script>
 	<script>
@@ -16,6 +17,7 @@
 
 		gtag('config', 'G-JM2N22YXTF');
 	</script>
+	<script src="js/contact.js"></script>
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 <body>
@@ -28,25 +30,29 @@
 			<a id="video" href="video.html">VIDEO</a>
 		</nav>
 	</header>
-	<main >
-		<div id="aboutMain">		
-			<div class="pswp-gallery" id="portraitGal">
-			<a href="/images/me.jpg"
-				data-pswp-width="3072"
-				data-pswp-height="4080"
-				data-cropped="true">
-				<img id="portrait" src="/images/meThumb.png" alt="">
-			</a>
-			</div>
-			<p class="concept" id="aboutMe">Hello!<br> I am Miles Howley, a student in Creative Technologies at Illinois State University. I specialize in video/audio production and web design, and also dabble in digital painting and photography.</p>
+	<main>
+		<div id="aboutMain" class="bodySection">		
+			<div class="pswp-gallery bodySection" id="portraitGal">
+				<a href="/images/me.jpg"
+					data-pswp-width="3072"
+					data-pswp-height="4080"
+					data-cropped="true">
+					<img id="portrait" src="/images/meThumb.png" alt="" style="width: 100%;">
+				</a>
+				</div>
+			<p class="concept sectionElement" style="grid-column: span 2;">Hello!<br> I am Miles Howley, a student in Creative Technologies at Illinois State University. I specialize in video/audio production and web design, and also dabble in digital painting and photography.</p>
 		</div>
-		<div class="concept" >
-			<h2 class="blurb">Contact Info:</h2>
-			<p class="blurb">mhrazor1@gmail.com</p>
+		<div id="contactFormDiv" class="bodySection">
+			<h2 class="sectionHeading">Contact Me:</h2>
+			<form action="https://api.web3forms.com/submit" method="POST" class="sectionElement" style="grid-column: span 3; display: grid;">
+				<input class="" type="hidden" name="access_key" value="f74bc867-1211-4961-ab30-c3cb7fa5b749" >
+				<input class="formBox" type="text" placeholder="Your Name" name="name" required>
+				<input class="formBox" type="email" placeholder="Your E-mail" name="email" required>
+				<textarea class="formBox" name="message" placeholder="Your Message" required></textarea>
+				<input class="" type="hidden" name="redirect" value="https://web3forms.com/success">
+				<button class="formBox" type="submit">Submit Form</button>
+			</form>
 		</div>
-		
-
-</div>
 	</main>
 	<footer>
 		<p id="copy">Copyright <i class="fa-regular fa-copyright"></i> 2022 Miles Howley </p>
