@@ -99,7 +99,8 @@ h3{overflow: hidden;}
     padding: 1rem;
     padding-bottom: 0px;
     margin: 0px;
-    font-style: italic; }
+    font-style: italic;
+    color: var(--bg-color);}
   .formBox{
     margin: 1rem;}
   .videoPost{
@@ -148,8 +149,6 @@ h3{overflow: hidden;}
     font-size: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;}
-  footer h4{
-    margin-bottom: 0px;}
   #vsco,#vsco:link,#vsco:visited,#vsco:hover{
     text-decoration: none;
     color: var(--bg-color);}
@@ -169,7 +168,7 @@ h3{overflow: hidden;}
   .sectionElement{font-size: 1.25rem;}
   #card-gallery{
     grid-template-columns: 1fr 1fr 1fr;}
-  footer{font-size: 2rem;}
+  footer{font-size: 1.25rem;}
 }
 
 @media all and (min-width: 860px){
