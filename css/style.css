@@ -13,7 +13,7 @@ body{
   padding-left: 1rem;
   padding-right: 1rem;
 }
-#card-gallery a{padding-top: 0.5rem;}
+.seasons a{padding-top: 0.5rem;}
 h3{overflow: hidden;}
 #LimberGrove,#GrandJunction{max-width: 100%; height: auto;}
 
@@ -64,7 +64,7 @@ h3{overflow: hidden;}
     color: var(--main-color);
     border: 0.33rem solid;
     transition: all .33s;}
-  #card-gallery{
+  .seasons{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 1rem;
@@ -94,7 +94,8 @@ h3{overflow: hidden;}
     background-color: var(--main-color);
     padding: 1rem;
     margin: 0px;
-    margin-bottom: 1rem;}
+    /* margin-bottom: 1rem; */
+  }
   .sectionHeading{
     padding: 1rem;
     padding-bottom: 0px;
@@ -109,13 +110,20 @@ h3{overflow: hidden;}
     padding: 1rem;
     background-color: var(--main-color);
     font-size: 1rem;}
+  .graphicPost{
+    display: grid;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: var(--main-color);
+    font-size: 1rem;}
   .audioPost{
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 1rem;
     background-color: var(--main-color);
     font-size: 1rem;}
-  .video{
+    .video{
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -163,10 +171,11 @@ h3{overflow: hidden;}
   h1{height: 16rem;}
   #arrow3,#arrow4{display: inline;}
   #rworksText{font-size: 1.5rem;}
+  .graphicPost{grid-template-columns: 1fr 1fr;}
   .arrows{font-size: 1.25rem;}
   .sectionHeading{font-size: 2rem;}
   .sectionElement{font-size: 1.25rem;}
-  #card-gallery{
+  .seasons{
     grid-template-columns: 1fr 1fr 1fr;}
   footer{font-size: 1.25rem;}
 }
@@ -194,7 +203,7 @@ h3{overflow: hidden;}
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
   }
-  #card-gallery{
+  .seasons{
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
